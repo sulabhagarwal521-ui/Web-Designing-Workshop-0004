@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC College Admission 2026</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header, footer {
+      background-color: #192678;
+      color: #ffffff;
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 480px;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    caption {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #b0b0b0;
+      padding: 6px 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e2e2e2;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    fieldset {
+      border: 1px solid #999999;
+      padding: 12px 15px;
+    }
+
+    legend {
+      font-size: 14px;
+      padding: 0 4px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 220px;
+      padding: 3px;
+      border: 1px solid #767676;
+    }
+
+    select {
+      padding: 3px;
+      border: 1px solid #767676;
+    }
+
+    textarea {
+      width: 90%;
+      height: 55px;
+      padding: 4px;
+      border: 1px solid #767676;
+      resize: vertical;
+    }
+
+    button {
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 10px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ABC College Admission 2026</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Courses and Fees</h2>
+      <table>
+        <caption>Available Courses</caption>
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Seats</th>
+            <th scope="col">Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech CSE</td>
+            <td>120</td>
+            <td>&#8377;90,000</td>
+          </tr>
+          <tr>
+            <td>BCA</td>
+            <td>60</td>
+            <td>&#8377;45,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-label="Student Admission Form">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Application Form</legend>
+
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+              <option value="B.Tech CSE">B.Tech CSE</option>
+              <option value="BCA">BCA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="statement">Statement:</label>
+            <textarea id="statement" name="statement" required minlength="10"></textarea>
+          </div>
+
+          <button type="submit">Apply</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 ABC College
+  </footer>
+
+</body>
+</html>
